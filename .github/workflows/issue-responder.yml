@@ -363,3 +363,5 @@ jobs:
             exit 1
           fi
           echo "reply posted to issue #$ISSUE (before=${BEFORE} after=${after})"
+
+# probe: register workflow
