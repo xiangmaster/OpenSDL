@@ -239,6 +239,8 @@ jobs:
       - name: Answer the issue
         id: answer
         uses: anthropics/claude-code-action@3f854a8fb5146b39d5cbf8b57f70d80810e1366f # v1.0.198
+        env:
+          ANTHROPIC_BASE_URL: https://api.openlux.ai
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           # Required for the responder to see issues from people without write access. Must stay
